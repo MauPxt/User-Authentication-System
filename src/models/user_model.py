@@ -23,6 +23,9 @@ class UserDAO:
         Base.metadata.create_all(engine, checkfirst=True)
 
     def create_user(self, username, password):
+        if not username or not password:
+            return None
+
         if not self._is_valid_input(username, password):
             return None
 
