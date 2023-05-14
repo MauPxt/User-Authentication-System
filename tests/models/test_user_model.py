@@ -1,9 +1,9 @@
 import pytest
-from sqlalchemy import create_engine, inspect
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy.orm.exc import NoResultFound
+
 from src.models.user_model import UserDAO, User, Base
-from src.utils.encryption_utils import encrypt_password, decrypt_password
+from src.utils.encryption_utils import decrypt_password
 
 engine = create_engine('sqlite:///database.db')
 Session = sessionmaker(bind=engine)

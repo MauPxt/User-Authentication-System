@@ -1,4 +1,5 @@
 import pytest
+
 from src.controllers.authentication_controller import AuthenticationController
 from src.models.user_model import UserDAO
 

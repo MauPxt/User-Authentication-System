@@ -1,5 +1,7 @@
 import re
+
 from src.models.user_model import UserDAO
+
 
 # from src.utils.encryption_utils import encrypt_password
 

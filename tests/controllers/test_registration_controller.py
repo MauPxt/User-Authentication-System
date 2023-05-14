@@ -1,4 +1,5 @@
 import pytest
+
 from src.controllers.registration_controller import RegistrationController
 
 

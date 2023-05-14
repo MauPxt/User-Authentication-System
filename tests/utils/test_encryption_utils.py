@@ -1,5 +1,5 @@
-import pytest
 import bcrypt
+
 from src.utils.encryption_utils import encrypt_password, decrypt_password
 
 

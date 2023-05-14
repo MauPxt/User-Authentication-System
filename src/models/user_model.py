@@ -1,8 +1,10 @@
 import re
+
 from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy import inspect, exc
+from sqlalchemy import exc
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+
 from src.utils.encryption_utils import encrypt_password
 
 Base = declarative_base()
